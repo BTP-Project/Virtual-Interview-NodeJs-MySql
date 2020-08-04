@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="static/container.css">
+        <link rel="stylesheet" href="static/label.css">
+        <link rel="stylesheet" href="static/input.css">
+        <link rel="stylesheet" href="static/button.css">
+        <link rel="stylesheet" href="static/background.css">
+
+    </head>
+    <body bgcolor="#faebd7">
+    <div>
+
+        <div class="container">
+
+            <form>
+                <br>
+                <label>Name:</label><br>
+                <input type="text" placeholder="Your full name.."><br>
+                <label>Contact Number:</label><br>
+            <input type="number" placeholder="Your contact number..."><br>
+                <label>Institute:</label><br>
+                <input type="text" placeholder="Your institue name.."><br>
+                <label>Email:</label><br>
+                <input type="email" id="email" placeholder="Your email adderss.."><br><br>
+                <input type="submit" value="Submit" ><br><br>
+
+            </form>
+        </div>
+
+    </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+          //TODO
+          $('form').on('submit',function (e){
+            e.preventDefault();
+
+            const email=$('#email').val().trim();
+
+            const data = {
+              email
+            };
+            $.post('/email',data ,function (){
+              console.log('server recieved our data')
+            });
+          });
+        </script>
+
+        <div class="container">
+          <form>
+            <br>
+            <label>Please enter your OTP:</label><br>
+            <input type="number" id="otp"><br>
+            <input type="submit" value="Submit"><br><br>
+          </form>
+        </div>
+
+
+        <script>
+          //TODO
+          $('form').on('submit',function (e){
+            e.preventDefault();
+
+            const email=$('#otp').val().trim();
+
+            const data1 = {
+              email
+            };
+            $.post('/varifyotp',data1 ,function (){
+              console.log('server recieved otp')
+            });
+          });
+        </script>
+
+    </body>
+</html>
