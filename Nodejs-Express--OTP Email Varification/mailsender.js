@@ -5,8 +5,8 @@ var transport=nodeMailer.createTransport({
   secure:false,
   requireTLS:true,
   auth:{
-    user:'preritkrjha2001@gmail.com',
-    pass:'glennmaxwell1'
+    user:'....',
+    pass:'....'
   }
 })
 
