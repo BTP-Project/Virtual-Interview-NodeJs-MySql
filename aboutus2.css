@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+   /* font-family:Century Goathic; */
+   background-color: lightblue;
+   font-family: "Comic Sans MS";
+   background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.header
+{
+    height: 100vh;
+    width: 100%;
+   
+    background-size: cover;
+    background-position: center;
+}
+.abt
+{
+  width: 50%;
+  background:rgba(0,0,0,.7);
+  color:#ffffff;
+  text-align: center;
+  padding: 50px;
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  
+}
+.w
+{
+  transition-delay: 2s;
+}
+.a
+{
+  transition-delay: 4s;
+}
+.b
+{
+  transition-delay: 6s;
+}
+.c
+{
+  transition-delay: 8s;
+}
+.f
+{
+  transition-delay: 10s;
+}
+.as
+{
+  transition-delay: 12s;
+}
+.S
+{
+  transition-delay: 14s;
+}
+.P
+{
+  transition-delay: 16s;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}.team
+{
+  font-family: "Comic Sans MS";
+  color: blue;
+  background-color: black;
+  color:blue;
+  transition-delay: 18s;
+}
