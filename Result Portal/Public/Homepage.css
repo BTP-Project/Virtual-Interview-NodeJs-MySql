@@ -1,0 +1,165 @@
+
+.navbar-nav a{
+  font-family: Algerian;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 25px !important;
+}
+
+.navbar-light .navbar-brand{
+  color: #fff ;
+  font-size: 30px ;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: black !important;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: #fff !important;
+}
+
+.navbar-nav{
+  text-align: center !important;
+  margin-right: 1px !important;
+}
+
+.nav-link{
+  padding: .1rem .2rem ;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+  color: crimson !important;
+}
+
+.self{
+  font-family: Algerian;
+  font-size: 25px;
+  color: mediumvioletred;
+  margin: 20px;
+}
+
+.self2{
+  font-family: "Comic Sans MS";
+  font-size: 25px;
+  color: green;
+}
+
+.self3{
+  font-family: "Algerian";
+  font-size: 40px;
+  color: red;
+}
+
+.BOX{
+  width: 100%;
+  border: 1px solid green;
+  padding: 30px;
+  margin: 10px;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: lightpink;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: lightpink;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 550px;
+  border-radius: 50%;
+}
+
+:root {
+  background: #f5f6fa;
+  color: #9c9c9c;
+  font: 1rem "PT Sans", sans-serif;
+}
+html, body, .container {
+  height: 100%;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  color: #7f8ff4;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.btn--primary {
+  background: #7f8ff4;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+  border-radius: 2px;
+  padding: 12px 36px;
+}
+.btn--primary:hover {
+  background: #6c7ff2;
+}
+.btn--primary:active {
+  background: #7f8ff4;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+.btn--inside {
+  margin-left: -96px;
+}
+.form__field {
+  width: 360px;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+}
+
+
