@@ -50,27 +50,35 @@
         <br>
         <br>
         <p></p>
-        <p class="self2">We re-engineered the services that we built for Security and Privacy. Result Platform to make it available for all. </p>
+        <p  class="self2" >We re-engineered the services that we built for Security and Privacy. Result Platform to make it available for all. </p>
         <p></p>
         <p></p>
         <br>
-        <div class="BOX">
+        <div class="BOX" >
+          <div class="animate__animated animate__fadeInDown">
         <p class="self">Recruiter</p>
+          </div>
         <div class="container">
           <div class="container__item">
             <form class="form">
+              <div class="animate__animated animate__fadeInRight">
               <input id="recruiter" type="email" class="form__field" placeholder="Your Institute Code Here" />
               <button id="btn1" type="button" class="btn btn--primary btn--inside uppercase">Next</button>
+              </div>
             </form>
           </div>
         </div>
         <p></p>
+          <div class="animate__animated animate__fadeInDown">
         <p class="self">Candidate</p>
-        <div class="container">
+          </div>
+            <div class="container">
           <div class="container__item">
             <form class="form">
+              <div class="animate__animated animate__fadeInLeft">
               <input id="candidate" type="email" class="form__field" placeholder="Your Institute Code Here" />
               <button id="btn2" type="button" class="btn btn--primary btn--inside uppercase">Check</button>
+              </div>
             </form>
           </div>
         </div>
@@ -80,14 +88,17 @@
 
     <div class="split right">
       <div class="centered">
-        <img src="Static/finger.jpg" alt="Avatar man">
-        <h2 class="self3">Good Luck !!!</h2>
-        <p class="self2">Have a great Future.</p>
+        <img src="Static/finger.jpg" alt="Avatar man" class="animate__animated animate__fadeInUp">
+        <div class="animate__animated animate__bounce animate__repeat-3" >
+          <h2 class="self3" >Good Luck !!!</h2>
+        </div>
+        <p class="self2" >Have a great Future.</p>
       </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+
 
        $("#btn1").click(function(){
          var recruiter=$('#recruiter').val().trim();
