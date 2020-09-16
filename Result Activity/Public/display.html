@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+</head>
+<body>
+
+<form action="/dsql" >
+    <table type="Number" name="MisNumber" ></table>
+    <table type="text" name="Name" ></table>
+    <table type="Number" name="DSA" ></table>
+    <table type="Number" name="CodingSkill" ></table>
+    <table type="Number" name="CommunicationSkill" ></table>
+    <table type="Number" name="OverallSkill" ></table>
+</form>
+
+</body>
+
+$(document).ready(() => {
+$.ajax({
+url: "http://localhost:3000/showtable",
+method: 'GET',
+success: function(response){
+if(response.rows.length > 0){
+for(let index = 0; index < response.rows.length; index++) {
+var newRow = $("<tr>");
+    var cols = "";
+    var firstname = '';
+    var lastname = '';
+    var gender = '';
+    cols += '<td> '+ response.rows[index].MisNumber +'</td>';
+    cols += '<td> '+ response.rows[index].lastname +'</td>';
+    cols += '<td> '+ response.rows[index].gender+'</td>';
+    newRow.append(cols);
+    $("#tableData .tbody").append(newRow);
+    }
+
+    }
+    }
+    })
+    })
+</html>

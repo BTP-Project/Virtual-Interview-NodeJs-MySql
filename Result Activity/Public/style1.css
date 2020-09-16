@@ -1,0 +1,58 @@
+body{
+    background: #00ff40;
+    font: 1em/1.5 sans-serif;
+}
+h1
+{
+    text-align: center;
+    font-size:50px;
+    color:steelblue;
+}
+form
+{
+    margin: 20px auto;
+    width: 320px;
+    color: steelblue;
+}
+input
+{
+    padding: 10px;
+    font-size: inherit;
+}
+input[type="text"]
+{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    background: #FAF6D9;
+    border: 2px solid steelblue;
+
+}
+input[type="number"]
+{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    background: #FAF6D9;
+    border: 2px solid steelblue;
+}
+input[value="Submit"]
+{
+    width:115px;
+    height:45px;
+    border: none;
+    background:steelblue;
+    color: white;
+}
+input[value="Reset"]
+{
+    width:115px;
+    height:45px;
+    border: none;
+    background:steelblue;
+    color: white;
+}
+input:focus
+{
+    background: white;
+}
