@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <style>
+        html{
+            background: deepskyblue;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        .notecontainer{
+            width: 90%;
+            height: auto;
+            margin: 40px auto;
+            background: white;
+            position: relative;
+        }
+        .notecontainer label{
+            color: rgb(95, 84, 84);
+            font-size: large;
+            border-radius: 5px;
+            padding-left: 8%;
+            font-family: "Comic Sans MS";
+            font-weight: bold;
+
+        }
+        .notecontainer h2{
+            color: black;
+            border-radius: 5px;
+            padding-left: 8%;
+            font-family: "Comic Sans MS";
+
+        }
+        li{
+            color: black;
+            font-weight: bold;
+            font-size: medium;
+            font-family: "Comic Sans MS";
+        }
+        .rcorners2 {
+            border-radius: 25px;
+            border: 2px solid darkblue;
+            padding: 20px;
+        }
+        button{
+            color: blue;
+            background-color: white;
+            font-family: "Comic Sans MS";
+            border: 0px;
+        }
+
+
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navli {
+            float: left;
+        }
+
+        .navbar {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar:hover{
+            background-color: #111;
+        }
+        .active:hover{
+            background-color: #45a049;
+        }
+        .active {
+            background-color: #73AD21;
+        }
+        .navdiv{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            padding-left: 0px;
+        }
+    </style>
+</head>
+<body>
+<div class ="navdiv">
+    <ul class="nav">
+        <li><a href="/home" class="navbar navli" onclick="myHome()">Home</a></li>
+        <li><a href="/profile" class="navbar navli" onclick="myProfile()">Profile</a></li>
+        <li><a href="/update"  class="navbar navli" onclick="myUpdate()">Update</a></li>
+        <li><a href="/"  class="navbar navli" onclick="myRegister()">Register</a></li>
+        <li><a href="/"  class="navbar navli" onclick="myFeedback()">Feedback</a></li>
+        <li><a href="/"  class="navbar navli" onclick="myFeatures()">Features</a></li>
+        <li style="float:right"><a class="active navbar navli" href="#about" onclick="myContactUs()">Contact Us</a></li>\
+        <li style="float:right"><a class="result navbar navli" href="#about" onclick="myResult()">Result</a></li>
+    </ul>
+    <script>
+        function myHome() {
+            window.open("/home");
+        }
+        function myProfile() {
+            window.open("/profile");
+        }
+        function myUpdate() {
+            window.open("/update");
+        }
+        function myRegister() {
+            window.open.replace("/");
+        }
+        function myContactUs() {
+            window.location.replace("/contactus");
+        }
+        function myFeedback() {
+            window.location.replace("/feedback");
+        }
+        function myFeatures() {
+            window.location.replace("/features");
+        }
+        function myResult() {
+            window.location.replace("/result");
+        }
+    </script>
+</div>
+<div class="notecontainer rcorners2">
+    <h2><center><b><u>Profile</u></b></center></h2>
+    <label>Name: </label><%= Name %><br><br>
+    <label>MIS No.: </label><%= MisNo %><br><br>
+    <label>Institute: </label><%= Institute %><br><br>
+    <label>Age: </label><%= Age %><br><br>
+    <label>Mobile No.: </label><%= MobileNo %><br><br>
+    <label>Resume URL: </label><button onclick="myFunction()"><u><%= ResumeURL %></u></button><br><br>
+    <label>Email ID: </label><%= EmailID %><br><br>
+</div>
+<script>
+    function myFunction() {
+        window.open("<%= ResumeURL %>");
+    }
+</script>
+</body>
+</html>
