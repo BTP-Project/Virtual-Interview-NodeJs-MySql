@@ -1,0 +1,29 @@
+<html>
+<head><script type="text/javascript" src="ejs_production.js"></script>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Mis</th>
+        <th>Name</th>
+        <th>DSA</th>
+        <th>Coding</th>
+        <th>Commu</th>
+        <th>Over</th>
+    </tr>
+    <% for(var i=0; i < rows.length; i++) { %>
+        <tr>
+            <td><%= rows[i].ID%></td>
+            <td><%= rows[i].Name%></td>
+            <td><%= rows[i].DSA%></td>
+            <td><%= rows[i].CodingSkill%></td>
+            <td><%= rows[i].CommunicationSkill%></td>
+            <td><%= rows[i].OverallSkill%></td>
+        </tr>
+    <% } %>
+</table>
+
+
+</body>
+</html>
