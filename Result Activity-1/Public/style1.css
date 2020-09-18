@@ -1,0 +1,59 @@
+body{
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    font-family: "Arial Black";
+}
+h1
+{
+    text-align: center;
+    font-size:50px;
+    color:steelblue;
+}
+form
+{
+    margin: 20px auto;
+    width: 320px;
+    color: steelblue;
+}
+input
+{
+    padding: 10px;
+    font-size: inherit;
+}
+input[type="text"]
+{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    background: #FAF6D9;
+    border: 2px solid steelblue;
+
+}
+input[type="number"]
+{
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    background: #FAF6D9;
+    border: 2px solid steelblue;
+}
+input[value="Submit"]
+{
+    width:115px;
+    height:45px;
+    border: none;
+    background:steelblue;
+    color: white;
+}
+input[value="Reset"]
+{
+    width:115px;
+    height:45px;
+    border: none;
+    background:steelblue;
+    color: white;
+}
+input:focus
+{
+    background: white;
+}
