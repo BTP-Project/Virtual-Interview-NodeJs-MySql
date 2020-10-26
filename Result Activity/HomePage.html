@@ -69,19 +69,6 @@
                 </div>
             </div>
             <p></p>
-            <div class="animate__animated animate__fadeInDown">
-                <p class="self">Candidate</p>
-            </div>
-            <div class="container">
-                <div class="container__item">
-                    <form class="form">
-                        <div class="animate__animated animate__fadeInLeft">
-                            <input id="candidate" type="email" class="form__field" placeholder="Your Institute Code Here" />
-                            <button id="btn2" type="button" class="btn btn--primary btn--inside uppercase">Check</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -119,22 +106,22 @@
         }
     });
 
-    $("#btn2").click(function(){
-        var candidate=$('#candidate').val().trim();
-        if(candidate===""){
-            alert('Text Feild cannot be empty');
-        }
-        else {
-            
-            const data = {
-                candidate
-            };
-            alert(data.candidate);
-            $.post('/showtable', data, () => {
-                console.log('server recieved our data')
-            });
-        }
-    });
+    // $("#btn2").click(function(){
+    //     var candidate=$('#candidate').val().trim();
+    //     if(candidate===""){
+    //         alert('Text Feild cannot be empty');
+    //     }
+    //     else {
+    //
+    //         const data = {
+    //             candidate
+    //         };
+    //         alert(data.candidate);
+    //         $.post('/showtable', data, () => {
+    //             console.log('server recieved our data')
+    //         });
+    //     }
+    // });
 
 </script>
 
