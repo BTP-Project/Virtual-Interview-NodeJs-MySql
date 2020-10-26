@@ -115,15 +115,15 @@ app.get('/sql',function (req,res)
         }else{
             // console.log(candidate1);
             console.log("success");
-            return res.sendFile(path.join(__dirname,'/HomePage-1.html'));
+            return res.sendFile(path.join(__dirname,'/HomePage.html'));
             //  res.redirect('/HomePage.html');
         }
     })
 
 })
-// app.get('/',(req,res) => {
-//     res.sendFile(path.join(__dirname,'HomePage1.html'));
-// })
+app.get('/am',(req,res) => {
+    res.sendFile(path.join(__dirname,'HomePage-1.html'));
+})
 
 app.post('/showtable', (req,res) => {
     console.log(req.body.candidate);
