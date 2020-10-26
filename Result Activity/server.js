@@ -3,9 +3,12 @@ const mysql = require('mysql');
 const app = express();
 const fs = require('fs');
 const path = require("path");
+var url = require("url");
 
 var recruter1;
 var candidate1;
+var sql1;
+var connection1;
 //rendering html
 app.use('/static',express.static('Public'));
 
@@ -112,12 +115,15 @@ app.get('/sql',function (req,res)
         }else{
             // console.log(candidate1);
             console.log("success");
-            return res.sendFile(path.join(__dirname,'/HomePage.html'));
-
+            return res.sendFile(path.join(__dirname,'/HomePage-1.html'));
+            //  res.redirect('/HomePage.html');
         }
     })
 
 })
+// app.get('/',(req,res) => {
+//     res.sendFile(path.join(__dirname,'HomePage1.html'));
+// })
 
 app.post('/showtable', (req,res) => {
     console.log(req.body.candidate);
@@ -127,33 +133,35 @@ app.post('/showtable', (req,res) => {
     db.query(sql, (err, result) => {
         if (err) throw err;
         console.log(result);
-        res.send('DATABASE CREATED!!!');
     })
     let mysql = require('mysql');
-    let connection = mysql.createConnection(dbb);
+    connection1 = mysql.createConnection(dbb);
     // console.log(markks);
 
-    sql=`SELECT * FROM ${candidate1};`;
-    connection.query(sql,function (err,result)
+    sql1=`SELECT * FROM ${candidate1};`;
+    connection1.query(sql,function (err,result)
     {
         if(err) throw err;
 
     })
+    // connection1=mysql.createConnection(dbb);
 
     app.set('views', path.join(__dirname, 'views'));
     app.set('view engine', 'pug');
-    app.get('/user',function (req,res)
-    {
-        connection.query(sql,function (err,rows,fields)
-        {
-            if(err) throw err;
-            res.render('user',{title:"Student Details",items:rows})
-        })
-    })
+    let pathname = url.parse(req.url).pathname;
+    res.writeHead(301,{Location: 'http://google.com/' + pathname});
+    res.end();
 
 })
 
-
+app.get('/user',function (req,res)
+{
+    connection1.query(sql1,function (err,rows,fields)
+    {
+        if(err) throw err;
+        res.render('user',{title:"Student Details",items:rows})
+    })
+})
 
 app.listen('3000',() => {
     console.log('Server Started on port 3000');
