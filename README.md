@@ -10,19 +10,19 @@
 ### Some Pics :
 
 <pre>
-  <b>                                                      HOME</b>
+  <b>                                                     HOME</b>
   <img src="Screenshots/1.PNG"  width="900" height="500" />  
-  <b>                                                     FEATURES</b>
+  <b>                                                   FEATURES</b>
   <img src="Screenshots/features.PNG"  width="900" height="500" />  
-  <b>                      SIGNIN                                                   INFORMATION FORM
+  <b>                      SIGNIN                                                 INFORMATION FORM
   <img src="Screenshots/signin.PNG"  width="400" height="300" />    <img src="Screenshots/Info.PNG"  width="400" height="300" /> 
-                           WEB-CHAT                                                 CONFRENCING SYSTEM
+                           WEB-CHAT                                              CONFRENCING SYSTEM
   <img src="Screenshots/webchat.PNG"  width="400" height="300" />    <img src="Screenshots/confrence.PNG"  width="400" height="300" /> 
-                         RESULT PORTAL                                               RESULT-VIEW
+                         RESULT PORTAL                                            RESULT-VIEW
   <img src="Screenshots/result.PNG"  width="400" height="300" />    <img src="Screenshots/resultpage.PNG"  width="400" height="300" />  
-                            FORGET                                                     FEEDBACK
+                            FORGET                                                  FEEDBACK
   <img src="Screenshots/forget.PNG"  width="400" height="300" />    <img src="Screenshots/feedback.PNG"  width="400" height="300" />  
-                                                      CONTACT US
+                                                     CONTACT US
   <img src="Screenshots/contactus.PNG"  width="900" height="500" />  
   </b>
 </pre>
